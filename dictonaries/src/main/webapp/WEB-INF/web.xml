@@ -1,0 +1,28 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+    <servlet>
+    <servlet-name>controlServlet</servlet-name>
+    <servlet-class>com.api.Dictonary</servlet-class>
+  </servlet>
+    <servlet>
+    	<servlet-name>NewDictonary</servlet-name>
+    	<display-name>NewDictonary</display-name>
+    	<description></description>
+    	<servlet-class>com.newapi.NewDictonary</servlet-class>
+    </servlet>
+
+  <servlet-mapping>
+    <servlet-name>controlServlet</servlet-name>
+    <url-pattern>/call</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>NewDictonary</servlet-name>
+  	<url-pattern>/NewDictonary</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
